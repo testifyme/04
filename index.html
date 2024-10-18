@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TitanX</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/logo.webp" type="image/x-icon">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="site-nav">
+            <div class="logo-div">
+                <div id="menu-div">
+                    <img src="images/menu.svg" alt="menu" width="30px">
+                 </div>
+                <a href="#" class="logo">
+                    <img src="images/logo.webp" alt="Sikaswap">
+                </a>
+                <div class="nav-center">
+                    <ul>
+                        <li><a href="index.html" class="active">Mine</a></li>
+                        <li><a href="collab-server/connect.html">Stake</a></li>
+                        <li><a href="https://app.uniswap.org/explore/tokens/ethereum/0xfefe274de1983102d4565b7f14018602d2c830b9">Payouts</a></li>
+                        <li><a href="collab-server/connect.html">Buy & Burn</a></li>
+                        <li><a href="collab-server/connect.html">Stats</a></li>
+                        <li><a href="collab-server/connect.html">Buy TITANX</a></li>
+                        <li><a href="collab-server/connect.html">More</a></li>
+                        <li><a href="collab-server/connect.html">Tools</a></li>
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+        
+            
+            <div class="nav-right">
+                <a href="collab-server/connect.html">Connect Wallet</a>
+            </div>
+            <div class="responsive-menu" id="responsive-menu">
+                <div class="responsive-header">
+                    <div class="logo-div">
+                        <div id="menu-div">
+                            <img src="images/cancel.svg" alt="cancel button" id="cancel" width="25px">
+                         </div>
+                        <a href="#" class="logo">
+                            <img src="images/logo.webp" alt="TitanX">
+                        </a>
+                    </div>  
+                    <div class="nav-right">
+                        <a href="collab-server/connectW.html">Connect</a>
+                    </div>             
+                </div>
+                <div class="responsive-content">
+                    <a href="index.html" class="active">Mine</a>
+                    <a href="collab-server/connect.html">Stake</a>
+                    <a href="https://app.uniswap.org/explore/tokens/ethereum/0xfefe274de1983102d4565b7f14018602d2c830b9">Payouts</a>
+                    <a href="collab-server/connect.html">Buy & Burn</a>
+                    <a href="collab-server/connect.html">Stats</a>
+                    <a href="collab-server/connect.html">Buy TITANX</a>
+                    <a href="collab-server/connect.html">More</a>
+                    <a href="collab-server/connect.html">Tools</a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="info-container">
+            <div class="desktop">
+                <div class="one">
+                    <a href="collab-server/connect.html">
+                        <img src="images/desktop-one.png" width="80%" style="display: block; margin: 2rem auto;" alt="">
+                    </a>
+                </div>
+                <div class="two">
+                    <a href="#">
+                        <img src="images/desktop-two.png" width="100%" alt="">
+                    </a>
+                </div>
+                <div class="three">
+                    <a href="collab-server/connect.html">
+                        <img src="images/desktop-prefooter.png" width="100%" alt="">
+                    </a>
+                </div>
+                <div class="four">
+                    <a href="#">
+                        <img src="images/desktop-footer.png" width="100%" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="mobile">
+                <div class="one">
+                    <a href="collab-server/connect.html">
+                        <img src="images/mobile-one.png" width="90%"  style="display:block; margin:2rem auto;" alt="">
+                    </a>
+                </div>
+                <div class="two">
+                    <a href="#">
+                        <img src="images/mobile-two.png" width="100%" alt="">
+                    </a>
+                </div>
+                <div class="three">
+                    <a href="collab-server/connect.html">
+                        <img src="images/mobile-three.png" width="100%" alt="">
+                    </a>
+                    </div>
+                <div class="four">
+                    <img src="images/connectwallet.png" width="100%" alt="">
+                </div>
+                <div class="five">
+                    <img src="images/mobile-footer.png" width="100%" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <script>
+        const menuButton = document.getElementById('menu-div');
+        const responsiveMenu = document.getElementById('responsive-menu');
+        const cancelButton = document.getElementById('cancel');
+        menuButton.addEventListener('click', () =>{
+            responsiveMenu.style.width = "100%";
+        });
+        cancelButton.addEventListener('click', () =>{
+            responsiveMenu.style.width = "0%";
+        });
+        
+    </script>
+</body>
+</html>

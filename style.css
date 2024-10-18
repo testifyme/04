@@ -1,0 +1,185 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.site-header{
+    min-height: 100vh;
+    height: 100%;
+    background-image: url('images/bg-skills.png');
+    background-repeat: no-repeat;
+    background-color: #212331;
+}
+.site-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 6%;
+    
+}
+.logo-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+.nav-center ul{
+    flex: 1;
+    text-align: center;
+}
+.nav-center ul li{
+    display: inline-block;
+    margin: 0 5px;
+}
+.nav-center ul li a{
+    color: white;
+    font-size: 0.875em;
+    display: block;
+    text-decoration: none;
+    padding: 5px;
+    letter-spacing: 1px;
+}
+
+.nav-center ul li .active{
+    background-color:#DADBDA;
+    border-radius:14px;
+    color: #130C23;
+    padding: 5px 12px;
+}
+.nav-right a{
+    color: white;
+    display: block;
+    background-color: dodgerblue;
+    padding: 10px 18px;
+    border-radius: 20px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+#menu-div{
+    display: none;
+    color: white;
+    font-size: 1.7rem;
+}
+.responsive-menu{
+    display: none;
+}
+.desktop{
+    padding: 50px 0%;
+}
+.one, .two, .three{
+    margin: 2rem auto;
+}
+.mobile{display: none;}
+@media (max-width:1100px) {
+   .mobile{
+    display: block;
+    cursor: pointer;
+    
+    overflow: hidden;
+   }
+   .three, .four{
+    margin: 2rem auto;
+   }
+   .desktop{
+    display: none;
+   
+}
+    .site-nav{
+        padding-top: 4% 2%;
+    }
+    .nav-center{
+        display: none;
+    }
+    .logo span{
+        display: none;
+    }
+    .text-container{
+        padding: 70px 2%;
+    }
+    #menu-div{
+        display: flex;
+    }
+    .nav-right a{
+        font-size: 0.875rem;
+    }
+    .responsive-menu{
+        top: 0%;
+        left: 0%;
+        position: fixed;
+        display: block;
+        background-image: url('images/bg-skills.png');
+        transition: 0.5s;
+        overflow-x: hidden;
+        width: 0%;
+        height: 100%;
+    }
+    .responsive-menu .responsive-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4% 6%;
+    }
+    #menu-div{cursor: pointer;}
+    .responsive-content{
+        padding: 30px 6%;
+    }
+    .responsive-content a{
+        color: white;
+        display: block;
+        font-size: 1.0rem;
+        margin: 1.2rem 0;
+        text-decoration: none;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+    }
+    .responsive-content .active{
+        color: greenyellow;
+    }
+    .text-container{
+        flex-direction: column;
+    }
+    
+    .text-container .left{
+        width: 100%;
+        
+    }
+    .right{
+        margin:2.5rem 0;
+        width: 100%;
+    }
+    .text-container .left img{
+        width: 100%;
+    }
+    .text-container .right{
+        border-radius: 10px;
+        height: 500px;
+        background-color: #1C1C2B;
+        width:90%;
+        padding: 20px;
+    }
+    .text-container p{
+        color: white;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 0.975rem;
+    }
+
+
+}
